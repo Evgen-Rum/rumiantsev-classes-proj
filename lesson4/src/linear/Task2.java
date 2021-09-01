@@ -14,6 +14,7 @@ public class Task2 {
 				double expr2 = (int) num1 / 1000.0;
 				double result = expr1 + expr2;
 				System.out.println(result);
+				break;
 			} else {
 				System.out.println("Incorrect data! Please re-enter!");
 				sc.next();
