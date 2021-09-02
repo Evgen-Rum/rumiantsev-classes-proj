@@ -7,8 +7,8 @@ public static void main(String[] args) {
 	double a;
 	double b;
 	double c;
+	System.out.println("Please enter a, b, c, an double number!");
 	for (int i = 0; i < 3; i++) {
-		System.out.println("Please enter a, b, c, an double number!");
 		double result; 
 		if (sc.hasNextDouble()) {
 			a = sc.nextDouble();
