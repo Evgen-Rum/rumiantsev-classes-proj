@@ -6,6 +6,8 @@ public class Person {
 	private int age;
 	private long id;
 	
+	
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -17,6 +19,12 @@ public class Person {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	public long getId() {
 		return id;
