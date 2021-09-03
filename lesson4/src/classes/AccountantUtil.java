@@ -1,9 +1,19 @@
 package classes;
 
 public class AccountantUtil extends Employee {
+	public boolean addAcademicPay(Employee empl) {
+		if (getAcademDegree().equals("Docent") && getAcademDegree() != null) {
+			empl.setDegreePay(100);
+			return true;
+		} else if (getAcademDegree().equals("Professor") && getAcademDegree() != null) {
+			empl.setDegreePay(300);
+			return true;
+		}
+		return false;
+	}
 
 	public boolean addSalary(Employee empl) {
-		if (getPosition().equals("Cleaner")) {
+		if (getPosition().equals("Cleaner") && getPosition() != null) {
 			if (getExperience() > 0 && getExperience() < 5) {
 				empl.setSalary(500);
 				return true;
@@ -16,7 +26,7 @@ public class AccountantUtil extends Employee {
 			} else {
 				return false;
 			}
-		} else if (getPosition().equals("Teacher")) {
+		} else if (getPosition().equals("Teacher") && getPosition() != null) {
 			if (getExperience() > 0 && getExperience() < 5) {
 				empl.setSalary(1000);
 				return true;
