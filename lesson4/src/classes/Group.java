@@ -4,7 +4,6 @@ public class Group {
 	private String groupName;
 	private Teacher curator;
 	private String specializ;
-	private int salaryInYear;
 	private int numberOfStudents;
 	private long id;
 	private Student[] students = new Student[18];

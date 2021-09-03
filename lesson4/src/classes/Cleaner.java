@@ -2,7 +2,7 @@ package classes;
 
 public class Cleaner extends Employee {
 	private int classrooms;
-	private int workTime;
+	private int schedule;
 
 	public int getClassrooms() {
 		return classrooms;
@@ -12,11 +12,11 @@ public class Cleaner extends Employee {
 		this.classrooms = classrooms;
 	}
 
-	public int getWorkTime() {
-		return workTime;
+	public int getSchedule() {
+		return schedule;
 	}
 
-	public void setWorkTime(int workTime) {
-		this.workTime = workTime;
+	public void setSchedule(int schedule) {
+		this.schedule = schedule;
 	}
 }

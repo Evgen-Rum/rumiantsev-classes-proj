@@ -6,13 +6,13 @@ public class Employee extends Person {
 	private int workHours;
 	private int experience;
 	private int prize;
-	private int holidayPay;
+	private double holidayPay;
 
-	public int getHolidayPay() {
+	public double getHolidayPay() {
 		return holidayPay;
 	}
 
-	public void setHolidayPay(int holidayPay) {
+	public void setHolidayPay(double holidayPay) {
 		this.holidayPay = holidayPay;
 	}
 
