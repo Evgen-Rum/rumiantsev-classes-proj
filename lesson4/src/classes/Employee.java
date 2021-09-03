@@ -5,6 +5,24 @@ public class Employee extends Person {
 	private int salary;
 	private int workHours;
 	private int experience;
+	private int prize;
+	private int holidayPay;
+
+	public int getHolidayPay() {
+		return holidayPay;
+	}
+
+	public void setHolidayPay(int holidayPay) {
+		this.holidayPay = holidayPay;
+	}
+
+	public int getPrize() {
+		return prize;
+	}
+
+	public void setPrize(int prize) {
+		this.prize = prize;
+	}
 
 	public String getPosition() {
 		return position;

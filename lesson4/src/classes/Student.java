@@ -13,14 +13,12 @@ public class Student extends Person {
 				+ "; Scholarship - " + scholarship + " BYN" + "]";
 	}
 
-	public boolean addScholarship(Student stud) {
-		if (marks != null && marks.equals(gMarks)) {
-			scholarship = 90;
-			return true;
-		} else {
-			scholarship = 10;
-		}
-		return false;
+	public int getScholarship() {
+		return scholarship;
+	}
+
+	public void setScholarship(int scholarship) {
+		this.scholarship = scholarship;
 	}
 
 	public String getFaculty() {
@@ -39,14 +37,6 @@ public class Student extends Person {
 		this.position = position;
 	}
 
-	public int getScholarship() {
-		return scholarship;
-	}
-
-	public void setScholarship(int scholarship) {
-		this.scholarship = scholarship;
-	}
-
 	public String getMarks() {
 		return marks;
 	}
@@ -57,5 +47,16 @@ public class Student extends Person {
 		} else {
 			System.out.println("Incorrect value!");
 		}
+	}
+
+	public boolean addScholarship(Student stud) {
+		if (marks != null && marks.equals(gMarks)) {
+			scholarship = 90;
+			return true;
+		} else {
+			scholarship = 10;
+		}
+		return false;
+
 	}
 }
