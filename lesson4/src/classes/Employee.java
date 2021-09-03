@@ -3,10 +3,27 @@ package classes;
 public class Employee extends Person {
 	private String position;
 	private int salary;
-	private int workHours;
 	private int experience;
 	private int prize;
 	private double holidayPay;
+	private String academDegree;
+	private int degreePay;
+
+	public int getDegreePay() {
+		return degreePay;
+	}
+
+	public void setDegreePay(int degreePay) {
+		this.degreePay = degreePay;
+	}
+
+	public String getAcademDegree() {
+		return academDegree;
+	}
+
+	public void setAcademDegree(String academDegree) {
+		this.academDegree = academDegree;
+	}
 
 	public double getHolidayPay() {
 		return holidayPay;
@@ -38,14 +55,6 @@ public class Employee extends Person {
 
 	public void setSalary(int salary) {
 		this.salary = salary;
-	}
-
-	public int getWorkHours() {
-		return workHours;
-	}
-
-	public void setWorkHours(int workHours) {
-		this.workHours = workHours;
 	}
 
 	public int getExperience() {
