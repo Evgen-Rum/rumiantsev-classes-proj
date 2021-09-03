@@ -1,68 +1,28 @@
 package classes;
 
-public class Teacher {
-	private String firstName;
-	private String lastName;
-	private String department;
-	private String position;
-	private int salary;
-	private int age;
-	private long id;
-	public Teacher(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
- 		id = (long) (Math.random() * Long.MAX_VALUE);
-	}
-	public Teacher() {
-		id = (long) (Math.random() * Long.MAX_VALUE);
-	}
+public class Teacher extends Employee {
+	private String academDegree;
+	private String subjects;
+
 	public String toString() {
-		String str = "[Employee info: Name - " + firstName + " " + lastName + "; ID - " + id +
-				"; Age - " + age + "; Department - " + department + "; Position - " + position 
-				+ "; Salary - " + salary + " BYN" + "]";
-		return str;
+		return "[Employee info: Name - " + getFirstName() + " " + getLastName() + "; ID - " + getId() + "; Age - "
+				+ getAge() + "; Academic degree - " + academDegree + "; Position - " + getPosition() + "; Salary - "
+				+ getSalary() + " BYN" + "]";
 	}
-	public int getAge() {
-		return age;
+
+	public String getSubjects() {
+		return subjects;
 	}
-	public void setAge(int age) {
-		if (age > 20 && age < 100) {
-		this.age = age;
-		} else {
-			System.out.println("Incorrect age!");
-		}
+
+	public void setSubjects(String subjects) {
+		this.subjects = subjects;
 	}
-	public String getFirstName() {
-		return firstName;
+
+	public String getAcademDegree() {
+		return academDegree;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public String getDepartment() {
-		return department;
-	}
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-	public String getPosition() {
-		return position;
-	}
-	public void setPosition(String position) {
-		this.position = position;
-	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary (int salary) {
-		this.salary = salary;
-	}
-	public long getId() {
-		return id;
+
+	public void setAcademDegree(String academDegree) {
+		this.academDegree = academDegree;
 	}
 }
