@@ -1,8 +1,11 @@
 package classes;
 
+import java.math.BigDecimal;
+
 public class Employee extends Person {
 	private String position;
-	private int salary;
+	private int salaryI;
+	private BigDecimal salary = new BigDecimal(10);
 	private int experience;
 	private int prize;
 	private double holidayPay;
@@ -49,11 +52,19 @@ public class Employee extends Person {
 		this.position = position;
 	}
 
-	public int getSalary() {
+	public BigDecimal getSalary() {
 		return salary;
 	}
 
-	public void setSalary(int salary) {
+	public int getSalaryI() {
+		return salaryI;
+	}
+
+	public void setSalaryI(int salaryI) {
+		this.salaryI = salaryI;
+	}
+
+	public void setSalary(BigDecimal salary) {
 		this.salary = salary;
 	}
 

@@ -6,6 +6,10 @@ public class Person {
 	private int age;
 	private long id;
 
+	public Person() {
+		id = (long) (Math.random() * 1000);
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
