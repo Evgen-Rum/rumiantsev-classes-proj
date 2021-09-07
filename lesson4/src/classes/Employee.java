@@ -2,21 +2,21 @@ package classes;
 
 import java.math.BigDecimal;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
 	private String position;
-	private int salaryI;
-	private BigDecimal salary = new BigDecimal(10);
-	private int experience;
-	private int prize;
-	private double holidayPay;
+	private String subjects;
 	private String academDegree;
-	private int degreePay;
+	private int experience;
+	private BigDecimal salary = BigDecimal.valueOf(10);
+	private BigDecimal prize = BigDecimal.valueOf(10);
+	private BigDecimal holidayPay = BigDecimal.valueOf(10);
+	private BigDecimal degreePay = BigDecimal.valueOf(10);
 
-	public int getDegreePay() {
+	public BigDecimal getDegreePay() {
 		return degreePay;
 	}
 
-	public void setDegreePay(int degreePay) {
+	public void setDegreePay(BigDecimal degreePay) {
 		this.degreePay = degreePay;
 	}
 
@@ -28,19 +28,19 @@ public class Employee extends Person {
 		this.academDegree = academDegree;
 	}
 
-	public double getHolidayPay() {
+	public BigDecimal getHolidayPay() {
 		return holidayPay;
 	}
 
-	public void setHolidayPay(double holidayPay) {
+	public void setHolidayPay(BigDecimal holidayPay) {
 		this.holidayPay = holidayPay;
 	}
 
-	public int getPrize() {
+	public BigDecimal getPrize() {
 		return prize;
 	}
 
-	public void setPrize(int prize) {
+	public void setPrize(BigDecimal prize) {
 		this.prize = prize;
 	}
 
@@ -56,14 +56,6 @@ public class Employee extends Person {
 		return salary;
 	}
 
-	public int getSalaryI() {
-		return salaryI;
-	}
-
-	public void setSalaryI(int salaryI) {
-		this.salaryI = salaryI;
-	}
-
 	public void setSalary(BigDecimal salary) {
 		this.salary = salary;
 	}
@@ -74,5 +66,13 @@ public class Employee extends Person {
 
 	public void setExperience(int experience) {
 		this.experience = experience;
+	}
+
+	public String getSubjects() {
+		return subjects;
+	}
+
+	public void setSubjects(String subjects) {
+		this.subjects = subjects;
 	}
 }

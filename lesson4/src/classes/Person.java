@@ -1,14 +1,14 @@
 package classes;
 
-public class Person {
+import java.util.Random;
+
+public abstract class Person {
 	private String firstName;
 	private String lastName;
 	private int age;
 	private long id;
 
-	public Person() {
-		id = (long) (Math.random() * 1000);
-	}
+	Random rand = new Random();
 
 	public String getFirstName() {
 		return firstName;
@@ -36,5 +36,9 @@ public class Person {
 
 	public long getId() {
 		return id;
+	}
+
+	public void setId() {
+		this.id = (long) (Math.random() * Long.MAX_VALUE);
 	}
 }
