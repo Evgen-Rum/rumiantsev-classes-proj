@@ -41,4 +41,8 @@ public abstract class Person {
 	public void setId() {
 		this.id = (long) (Math.random() * Long.MAX_VALUE);
 	}
+
+	public String intoducedYourself() {
+		return "My name: " + firstName + " " + lastName + ". My age: " + age + ".";
+	}
 }
