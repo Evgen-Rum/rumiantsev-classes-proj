@@ -60,6 +60,8 @@ public class Task1 extends AccountantUtil {
 		System.out.println(teacher4.toString() + " " + "\n" + teacher4.intoducedYourself());
 
 		Cleaner cleaner1 = new Cleaner();
+		cleaner1.setFirstName("Peter");
+		cleaner1.setLastName("Gavrilov");
 		cleaner1.setAge(40);
 		cleaner1.setPosition("Cleaner");
 		cleaner1.setSchedule("18:00 - 21:00");
@@ -86,9 +88,12 @@ public class Task1 extends AccountantUtil {
 		student1.setLastName("Ivanov");
 		student1.setMarks("Good");
 		student1.setPosition("Head of Group");
+		student1.setId();
 		student1.addScholarship(student1);
+		System.out.println(student1.toString() + " " + "\n" + student1.intoducedYourself());
 
 		Student student2 = new Student();
+		student2.setId();
 		student2.setAge(18);
 		student2.setFaculty("IT");
 		student2.setFirstName("Misha");
@@ -96,8 +101,10 @@ public class Task1 extends AccountantUtil {
 		student2.setMarks("Bad");
 		student2.setPosition("Student");
 		student2.addScholarship(student2);
+		System.out.println(student2.toString() + " " + "\n" + student2.intoducedYourself());
 
 		Student student3 = new Student();
+		student3.setId();
 		student3.setAge(18);
 		student3.setFaculty("Eng");
 		student3.setFirstName("Dasha");
@@ -105,8 +112,10 @@ public class Task1 extends AccountantUtil {
 		student3.setMarks("Good");
 		student3.setPosition("Student");
 		student3.addScholarship(student3);
+		System.out.println(student3.toString() + " " + "\n" + student3.intoducedYourself());
 
 		Student student4 = new Student();
+		student4.setId();
 		student4.setAge(18);
 		student4.setFaculty("IT");
 		student4.setFirstName("Nastya");
@@ -114,6 +123,7 @@ public class Task1 extends AccountantUtil {
 		student4.setMarks("Bad");
 		student4.setPosition("Student");
 		student4.addScholarship(student4);
+		System.out.println(student4.toString() + " " + "\n" + student4.intoducedYourself());
 
 		Group gr1 = new Group();
 		gr1.addStudents(student1);
