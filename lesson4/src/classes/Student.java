@@ -8,9 +8,8 @@ public class Student extends Person {
 	private int scholarship;
 
 	public String toString() {
-		return "[Student info: Name - " + getFirstName() + " " + getLastName() + "; Marks - " + marks + "; ID - "
-				+ getId() + "; Age - " + getAge() + "; faculty - " + faculty + "; Position - " + position
-				+ "; Scholarship - " + scholarship + " BYN" + "]";
+		return "[Student info: Marks - " + marks + "; ID - " + getId() + "; faculty - " + faculty + "; Position - "
+				+ position + "; Scholarship - " + scholarship + " BYN" + "]";
 	}
 
 	public int getScholarship() {
