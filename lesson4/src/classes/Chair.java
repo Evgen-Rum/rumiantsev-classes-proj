@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 
 public class Chair extends Employee {
 	private static BigDecimal CostT = BigDecimal.valueOf(10);
-	private static BigDecimal CostC = BigDecimal.valueOf(10);
 	private static BigDecimal allCost = BigDecimal.valueOf(10);
 	private int numberOfTeacher;
 	private String chairName;
