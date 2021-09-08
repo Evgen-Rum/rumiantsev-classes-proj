@@ -1,6 +1,6 @@
 package classes;
 
-public class Cleaner extends Employee {
+public class Cleaner extends Employee implements Identifiable {
 	private int classrooms;
 	private String schedule;
 

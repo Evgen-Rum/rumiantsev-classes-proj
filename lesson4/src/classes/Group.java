@@ -1,6 +1,6 @@
 package classes;
 
-public class Group {
+public class Group implements Identifiable {
 	private String groupName;
 	private Teacher curator;
 	private String specializ;

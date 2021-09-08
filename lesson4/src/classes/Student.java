@@ -1,6 +1,6 @@
 package classes;
 
-public class Student extends Person {
+public class Student extends Person implements Identifiable {
 	private String faculty;
 	private String position;
 	private String marks;
