@@ -11,10 +11,11 @@ public class Task1 extends AccountantUtil {
 		teacher1.setLastName("Sutkin");
 		teacher1.setId();
 		teacher1.setSubjects("Math");
+		teacher1.setAge(45);
 		addAcademicPay(teacher1);
 		addPrizeT(teacher1);
 		addSalaryT(teacher1);
-		System.out.println(teacher1.toString());
+		System.out.println(teacher1.toString() + " " + "\n" + teacher1.intoducedYourself());
 
 		Teacher teacher2 = new Teacher();
 		teacher2.setPosition("Teacher");
@@ -24,10 +25,11 @@ public class Task1 extends AccountantUtil {
 		teacher2.setLastName("Driev");
 		teacher2.setId();
 		teacher2.setSubjects("Comp. Science");
+		teacher2.setAge(47);
 		addAcademicPay(teacher2);
 		addPrizeT(teacher2);
 		addSalaryT(teacher2);
-		System.out.println(teacher2.toString());
+		System.out.println(teacher2.toString() + " " + "\n" + teacher2.intoducedYourself());
 
 		Teacher teacher3 = new Teacher();
 		teacher3.setPosition("Teacher");
@@ -37,10 +39,11 @@ public class Task1 extends AccountantUtil {
 		teacher3.setLastName("Cidorov");
 		teacher3.setId();
 		teacher3.setSubjects("Java dev");
+		teacher3.setAge(36);
 		addAcademicPay(teacher3);
 		addPrizeT(teacher3);
 		addSalaryT(teacher3);
-		System.out.println(teacher3.toString());
+		System.out.println(teacher3.toString() + " " + "\n" + teacher3.intoducedYourself());
 
 		Teacher teacher4 = new Teacher();
 		teacher4.setPosition("Teacher");
@@ -50,16 +53,19 @@ public class Task1 extends AccountantUtil {
 		teacher4.setLastName("Petrenko");
 		teacher4.setId();
 		teacher4.setSubjects("Java dev");
+		teacher4.setAge(31);
 		addAcademicPay(teacher4);
 		addPrizeT(teacher4);
 		addSalaryT(teacher4);
-		System.out.println(teacher4.toString());
+		System.out.println(teacher4.toString() + " " + "\n" + teacher4.intoducedYourself());
 
 		Cleaner cleaner1 = new Cleaner();
 		cleaner1.setAge(40);
 		cleaner1.setPosition("Cleaner");
+		cleaner1.setSchedule("18:00 - 21:00");
 		addPrizeC(cleaner1);
 		addSalaryC(cleaner1);
+		System.out.println(cleaner1.toString() + " " + "\n" + cleaner1.intoducedYourself());
 
 		Chair ch1 = new Chair();
 		ch1.setHeadOfChair(teacher3);
@@ -99,7 +105,7 @@ public class Task1 extends AccountantUtil {
 		student3.setMarks("Good");
 		student3.setPosition("Student");
 		student3.addScholarship(student3);
-		
+
 		Student student4 = new Student();
 		student4.setAge(18);
 		student4.setFaculty("IT");
