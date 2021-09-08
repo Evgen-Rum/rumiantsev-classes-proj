@@ -2,7 +2,11 @@ package classes;
 
 public class Cleaner extends Employee {
 	private int classrooms;
-	private int schedule;
+	private String schedule;
+
+	public String toString() {
+		return "[Cleaner info: My schedule - " + getSchedule();
+	}
 
 	public int getClassrooms() {
 		return classrooms;
@@ -12,11 +16,11 @@ public class Cleaner extends Employee {
 		this.classrooms = classrooms;
 	}
 
-	public int getSchedule() {
+	public String getSchedule() {
 		return schedule;
 	}
 
-	public void setSchedule(int schedule) {
+	public void setSchedule(String schedule) {
 		this.schedule = schedule;
 	}
 }
