@@ -7,4 +7,10 @@ public class Teacher extends Employee implements Identifiable {
 				+ getPosition() + "; Salary - " + getSalary() + " BYN" + "; Experience - " + getExperience() + "]";
 	}
 
+	@Override
+	public void numID() {
+		// TODO Auto-generated method stub
+		getId();
+	}
+
 }

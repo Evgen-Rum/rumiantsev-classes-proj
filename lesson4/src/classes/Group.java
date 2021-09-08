@@ -76,4 +76,14 @@ public class Group implements Identifiable {
 	public void setSpecializ(String specializ) {
 		this.specializ = specializ;
 	}
+
+	public long getId() {
+		return id;
+	}
+
+	@Override
+	public void numID() {
+		// TODO Auto-generated method stub
+		getId();
+	}
 }

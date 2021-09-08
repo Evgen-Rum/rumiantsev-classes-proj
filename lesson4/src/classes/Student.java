@@ -58,4 +58,10 @@ public class Student extends Person implements Identifiable {
 		return false;
 
 	}
+
+	@Override
+	public void numID() {
+		// TODO Auto-generated method stub
+		getId();
+	}
 }

@@ -23,4 +23,10 @@ public class Cleaner extends Employee implements Identifiable {
 	public void setSchedule(String schedule) {
 		this.schedule = schedule;
 	}
+
+	@Override
+	public void numID() {
+		// TODO Auto-generated method stub
+		getId();
+	}
 }
