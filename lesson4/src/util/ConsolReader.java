@@ -39,13 +39,21 @@ public class ConsolReader {
 		}
 		return defaultValue;
 	}
-//public static String readStringFromConsol() {
-//	Scanner scan = new Scanner(System.in);
-//	String line;
-//	for (int i = 0; i < 3; i++) {
-//		if (scan.hasNextLine()) {
-//			line
-//		}
-//	}
-//}
+
+	public static String readStringFromConsol(String defaultValue) {
+		Scanner scan = new Scanner(System.in);
+		String line;
+		for (int i = 0; i < 3; i++) {
+			if (scan.hasNextLine()) {
+				line = scan.nextLine();
+				return line;
+			} else if (i < 2) {
+				System.out.println("Incorrect value! Please re-enter!");
+				scan.next();
+			} else {
+				System.out.println("Incorrect value more then 3 times. Return default value!");
+			}
+		}
+		return defaultValue;
+	}
 }
