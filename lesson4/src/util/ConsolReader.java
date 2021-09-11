@@ -40,18 +40,25 @@ public class ConsolReader {
 		return defaultValue;
 	}
 
-	public static String readStringFromConsol(String defaultValue) {
+	public static String readStringFromConsole() {
 		Scanner scan = new Scanner(System.in);
-		String line;
+		String line = scan.nextLine();
+		return line;
+	}
+
+	public static boolean readBooleanFromConsole(Boolean defaultValue) {
+		Scanner scan = new Scanner(System.in);
+		boolean bul;
 		for (int i = 0; i < 3; i++) {
-			if (scan.hasNextLine()) {
-				line = scan.nextLine();
-				return line;
+			if (scan.hasNextBoolean()) {
+				bul = scan.nextBoolean();
+				return bul;
 			} else if (i < 2) {
 				System.out.println("Incorrect value! Please re-enter!");
 				scan.next();
 			} else {
-				System.out.println("Incorrect value more then 3 times. Return default value!");
+				bul = defaultValue;
+				return bul;
 			}
 		}
 		return defaultValue;
