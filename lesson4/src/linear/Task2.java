@@ -2,7 +2,9 @@ package linear;
 
 import java.util.Scanner;
 
-public class Task2 {
+import util.ConsolReader;
+
+public class Task2 extends ConsolReader {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter double number");
