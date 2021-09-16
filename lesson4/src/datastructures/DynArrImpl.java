@@ -22,8 +22,21 @@ public class DynArrImpl implements MyCollection {
 
 	@Override
 	public boolean remove(Object obj) {
-		// TODO Auto-generated method stub
-		return false;
+		boolean isDeleted = false;
+
+		for (int i = 0; i < numOfElements; i++) {
+			if (isDeleted) {
+				dynArray[i - 1] = dynArray[i];
+			} else if (dynArray[i].equals(obj)) {
+				dynArray[i] = null;
+				numOfElements--;
+				isDeleted = true;
+			}
+		}
+		if (isDeleted) {
+			dynArray[numOfElements] = null;
+		}
+		return isDeleted;
 	}
 
 	@Override
