@@ -59,8 +59,7 @@ public class DynArrImpl implements MyCollection {
 
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
+		return Arrays.copyOf(dynArray, numOfElements);
 	}
 
 }
