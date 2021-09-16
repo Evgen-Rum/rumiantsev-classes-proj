@@ -9,6 +9,7 @@ public class Group implements Identifiable {
 	private String specializ;
 	private long id;
 	private MyCollection students = new DynArrImpl();
+	private static final int MAX_NUMBER_OF_STUDENTS = 8;
 
 	public Group() {
 		id = (long) (Math.random() * Long.MAX_VALUE);
@@ -31,7 +32,12 @@ public class Group implements Identifiable {
 //	}
 
 	public boolean addStudents(Student Stud) {
-		return students.add(Stud);
+		if (students.size() >= MAX_NUMBER_OF_STUDENTS) {
+			return false;
+		} else {
+			students.add(Stud);
+			return true;
+		}
 
 //		if (numberOfStudents < students.length) {
 //			for (int i = 0; i < students.length; i++) {
