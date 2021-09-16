@@ -7,7 +7,6 @@ public class Group implements Identifiable {
 	private String groupName;
 	private Teacher curator;
 	private String specializ;
-	private int numberOfStudents;
 	private long id;
 	private MyCollection students = new DynArrImpl();
 
@@ -88,9 +87,12 @@ public class Group implements Identifiable {
 		return id;
 	}
 
+	public int getNumOfStudents() {
+		return students.size();
+	}
+
 	@Override
 	public void numID() {
-		// TODO Auto-generated method stub
 		getId();
 	}
 }
