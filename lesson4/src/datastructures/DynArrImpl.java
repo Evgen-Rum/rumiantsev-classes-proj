@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class DynArrImpl implements MyCollection {
 
-	Object[] dynArray = new Object[1];
-	int numOfElements;
+	private Object[] dynArray = new Object[10];
+	private int numOfElements;
 
 	@Override
 	public int size() {
-		return dynArray.length;
+		return numOfElements;
 	}
 
 	@Override
