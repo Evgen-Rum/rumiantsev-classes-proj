@@ -28,7 +28,11 @@ public class DynArrImpl implements MyCollection {
 
 	@Override
 	public boolean contains(Object obj) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < numOfElements; i++) {
+			if (dynArray[i].equals(obj)) {
+				return true;
+			}
+		}
 		return false;
 	}
 
