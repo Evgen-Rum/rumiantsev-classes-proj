@@ -1,6 +1,6 @@
 package datastructures;
 
-public interface WorkWithDynArrays {
+public interface MyCollection {
 
 	int size();
 
