@@ -33,6 +33,7 @@ public class Group implements Identifiable {
 
 	public boolean addStudents(Student Stud) {
 		return students.add(Stud);
+
 //		if (numberOfStudents < students.length) {
 //			for (int i = 0; i < students.length; i++) {
 //				if (students[i] == null) {
@@ -45,16 +46,18 @@ public class Group implements Identifiable {
 //		return false;
 	}
 
-	public boolean removeStudents(long id) {
-		for (int i = 0; i < students.length; i++) {
-			if (students[i] != null && students[i].getId() == id) {
-				students[i] = null;
-				numberOfStudents--;
-				return true;
-			} else {
-			}
-		}
-		return false;
+	public boolean removeStudents(Student Stud) {
+		return students.remove(Stud);
+
+//		for (int i = 0; i < students.length; i++) {
+//			if (students[i] != null && students[i].getId() == id) {
+//				students[i] = null;
+//				numberOfStudents--;
+//				return true;
+//			} else {
+//			}
+//		}
+//		return false;
 	}
 
 	public String getGroupName() {
