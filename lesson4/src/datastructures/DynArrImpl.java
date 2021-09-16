@@ -13,23 +13,11 @@ public class DynArrImpl implements MyCollection {
 	}
 
 	@Override
-	public boolean add(Object obj) {
-		if (numOfElements < dynArray.length) {
-			dynArray[numOfElements] = obj;
-			numOfElements++;
-			
-//			for (int i = 0; i < dynArray.length; i++) {
-//				if (dynArray[i] == null) {
-//					dynArray[i] = obj;
-//					numOfElements++;
-//				}
-//			}
-		} else {
+	public void add(Object obj) {
+		if (numOfElements >= dynArray.length) {
 			dynArray = Arrays.copyOf(dynArray, (int) (dynArray.length * 1.5));
-			dynArray[numOfElements] = obj;
-			numOfElements++;
 		}
-		return true;
+		dynArray[numOfElements++] = obj;
 	}
 
 	@Override
