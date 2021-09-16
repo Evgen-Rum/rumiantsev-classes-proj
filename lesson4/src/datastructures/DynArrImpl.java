@@ -38,8 +38,10 @@ public class DynArrImpl implements MyCollection {
 
 	@Override
 	public Object get() {
-		// TODO Auto-generated method stub
-		return null;
+		if (numOfElements == 0) {
+			return null;
+		}
+		return dynArray[numOfElements - 1];
 	}
 
 	@Override
