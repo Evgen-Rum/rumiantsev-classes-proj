@@ -130,7 +130,7 @@ public class Task1 extends AccountantUtil {
 		gr1.addStudents(student2);
 		gr1.addStudents(student3);
 		System.out.println(gr1.toString());
-		gr1.removeStudents(student2.getId());
+		gr1.removeStudents(student2);
 		System.out.println(gr1.toString());
 		gr1.addStudents(student4);
 		System.out.println(gr1.toString());
