@@ -15,21 +15,21 @@ public class Group implements Identifiable {
 		id = (long) (Math.random() * Long.MAX_VALUE);
 	}
 
-//	public String toString() {
-//		String str = "[Group info: Name/number of the group - " + groupName + "; Specialization - " + specializ
-//				+ "; Number of students in the group - " + numberOfStudents + "; ID - " + id + "]" + "\n";
-//		if (curator != null) {
-//			str += "\n Group " + groupName + " curator: " + curator.toString() + "\n";
-//		}
-//		int counter = 1;
-//		for (int i = 0; i < students.length; i++) {
-//			if (students[i] != null) {
-//				str += "\t" + counter + ") " + students[i].toString() + "\n";
-//				counter++;
-//			}
-//		}
-//		return str;
-//	}
+	public String toString() {
+		String str = "[Group info: Name/number of the group - " + groupName + "; Specialization - " + specializ
+				+ "; Number of students in the group - " + getNumOfStudents() + "; ID - " + id + "]" + "\n";
+		if (curator != null) {
+			str += "\n Group " + groupName + " curator: " + curator.toString() + "\n";
+		}
+		int counter = 1;
+		for (int i = 0; i < students.size(); i++) {
+			if (students.get() != null) {
+				str += "\t" + counter + ") " + students.get() + "\n";
+				counter++;
+			}
+		}
+		return str;
+	}
 
 	public boolean addStudents(Student Stud) {
 		if (students.size() >= MAX_NUMBER_OF_STUDENTS) {
