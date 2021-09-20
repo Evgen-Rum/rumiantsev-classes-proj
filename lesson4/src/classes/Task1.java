@@ -15,7 +15,7 @@ public class Task1 extends AccountantUtil {
 		addAcademicPay(teacher1);
 		addPrizeT(teacher1);
 		addSalaryT(teacher1);
-		System.out.println(teacher1.toString() + " " + "\n" + teacher1.intoducedYourself());
+		System.out.println(teacher1.toString() + "\t" + teacher1.intoducedYourself() + "\n");
 
 		Teacher teacher2 = new Teacher();
 		teacher2.setPosition("Teacher");
@@ -29,7 +29,7 @@ public class Task1 extends AccountantUtil {
 		addAcademicPay(teacher2);
 		addPrizeT(teacher2);
 		addSalaryT(teacher2);
-		System.out.println(teacher2.toString() + " " + "\n" + teacher2.intoducedYourself());
+		System.out.println(teacher2.toString() + "\t" + teacher2.intoducedYourself() + "\n");
 
 		Teacher teacher3 = new Teacher();
 		teacher3.setPosition("Teacher");
@@ -43,7 +43,7 @@ public class Task1 extends AccountantUtil {
 		addAcademicPay(teacher3);
 		addPrizeT(teacher3);
 		addSalaryT(teacher3);
-		System.out.println(teacher3.toString() + " " + "\n" + teacher3.intoducedYourself());
+		System.out.println(teacher3.toString() + "\t" + teacher3.intoducedYourself() + "\n");
 
 		Teacher teacher4 = new Teacher();
 		teacher4.setPosition("Teacher");
@@ -57,7 +57,7 @@ public class Task1 extends AccountantUtil {
 		addAcademicPay(teacher4);
 		addPrizeT(teacher4);
 		addSalaryT(teacher4);
-		System.out.println(teacher4.toString() + " " + "\n" + teacher4.intoducedYourself());
+		System.out.println(teacher4.toString() + "\t" + teacher4.intoducedYourself() + "\n");
 
 		Cleaner cleaner1 = new Cleaner();
 		cleaner1.setFirstName("Peter");
@@ -67,7 +67,7 @@ public class Task1 extends AccountantUtil {
 		cleaner1.setSchedule("18:00 - 21:00");
 		addPrizeC(cleaner1);
 		addSalaryC(cleaner1);
-		System.out.println(cleaner1.toString() + " " + "\n" + cleaner1.intoducedYourself());
+		System.out.println(cleaner1.toString() + "\t" + cleaner1.intoducedYourself() + "\n");
 
 		Chair ch1 = new Chair();
 		ch1.setHeadOfChair(teacher3);
@@ -90,7 +90,7 @@ public class Task1 extends AccountantUtil {
 		student1.setPosition("Head of Group");
 		student1.setId();
 		student1.addScholarship(student1);
-		System.out.println(student1.toString() + " " + "\n" + student1.intoducedYourself());
+		System.out.println(student1.toString() + "\t" + student1.intoducedYourself() + "\n");
 
 		Student student2 = new Student();
 		student2.setId();
@@ -101,7 +101,7 @@ public class Task1 extends AccountantUtil {
 		student2.setMarks("Bad");
 		student2.setPosition("Student");
 		student2.addScholarship(student2);
-		System.out.println(student2.toString() + " " + "\n" + student2.intoducedYourself());
+		System.out.println(student2.toString() + "\t" + student2.intoducedYourself() + "\n");
 
 		Student student3 = new Student();
 		student3.setId();
@@ -112,7 +112,7 @@ public class Task1 extends AccountantUtil {
 		student3.setMarks("Good");
 		student3.setPosition("Student");
 		student3.addScholarship(student3);
-		System.out.println(student3.toString() + " " + "\n" + student3.intoducedYourself());
+		System.out.println(student3.toString() + "\t" + student3.intoducedYourself() + "\n");
 
 		Student student4 = new Student();
 		student4.setId();
@@ -123,9 +123,11 @@ public class Task1 extends AccountantUtil {
 		student4.setMarks("Bad");
 		student4.setPosition("Student");
 		student4.addScholarship(student4);
-		System.out.println(student4.toString() + " " + "\n" + student4.intoducedYourself());
+		System.out.println(student4.toString() + "\t" + student4.intoducedYourself() + "\n");
 
 		Group gr1 = new Group();
+		gr1.setGroupName("911101");
+		gr1.setSpecializ("IT");
 		gr1.addStudents(student1);
 		gr1.addStudents(student2);
 		gr1.addStudents(student3);
