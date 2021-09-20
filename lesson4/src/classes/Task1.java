@@ -126,6 +126,7 @@ public class Task1 extends AccountantUtil {
 		System.out.println(student4.toString() + "\t" + student4.intoducedYourself() + "\n");
 
 		Group gr1 = new Group();
+		gr1.setCurator(teacher1);
 		gr1.setGroupName("911101");
 		gr1.setSpecializ("IT");
 		gr1.addStudents(student1);
