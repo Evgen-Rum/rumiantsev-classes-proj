@@ -43,6 +43,6 @@ public abstract class Person {
 	}
 
 	public String intoducedYourself() {
-		return "My name: " + firstName + " " + lastName + ". My age: " + age + ".";
+		return "My name: " + firstName + " " + lastName + ", my age: " + age + ".";
 	}
 }
