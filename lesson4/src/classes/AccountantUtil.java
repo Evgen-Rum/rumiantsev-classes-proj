@@ -20,35 +20,46 @@ public class AccountantUtil extends Employee {
 
 	public static boolean addSalary(Employee empl) {
 		if (empl.getPosition().equals("Cleaner") && empl.getPosition() != null) {
-			if (empl.getExperience() > 0 && empl.getExperience() < 7) {
+			if (empl.getExperience() >= 0 && empl.getExperience() <= 7) {
 				empl.setSalary(BigDecimal.valueOf(200).add(empl.getPrize()));
 				return true;
 			} else if (empl.getExperience() > 7 && empl.getExperience() < 15) {
 				empl.setSalary(BigDecimal.valueOf(800).add(empl.getPrize()));
 				return true;
-			} else if (empl.getExperience() > 15) {
+			} else if (empl.getExperience() >= 15) {
 				empl.setSalary(BigDecimal.valueOf(1100).add(empl.getPrize()));
+				return true;
+			}
+		} else if (empl.getPosition().equals("Teacher") && empl.getPosition() != null) {
+			if (empl.getExperience() > 0 && empl.getExperience() < 7) {
+				empl.setSalary(BigDecimal.valueOf(1000).add(empl.getPrize().add(empl.getDegreePay())));
+				return true;
+			} else if (empl.getExperience() > 7 && empl.getExperience() < 15) {
+				empl.setSalary(BigDecimal.valueOf(1500).add(empl.getPrize().add(empl.getDegreePay())));
+				return true;
+			} else if (empl.getExperience() > 15) {
+				empl.setSalary(BigDecimal.valueOf(2000).add(empl.getPrize().add(empl.getDegreePay())));
 				return true;
 			}
 		}
 		return false;
 	}
 
-	public static boolean addSalaryT(Teacher teach) {
-		if (teach.getPosition().equals("Teacher") && teach.getPosition() != null) {
-			if (teach.getExperience() > 0 && teach.getExperience() < 7) {
-				teach.setSalary(BigDecimal.valueOf(1000).add(teach.getPrize().add(teach.getDegreePay())));
-				return true;
-			} else if (teach.getExperience() > 7 && teach.getExperience() < 15) {
-				teach.setSalary(BigDecimal.valueOf(1500).add(teach.getPrize().add(teach.getDegreePay())));
-				return true;
-			} else if (teach.getExperience() > 15) {
-				teach.setSalary(BigDecimal.valueOf(2000).add(teach.getPrize().add(teach.getDegreePay())));
-				return true;
-			}
-		}
-		return false;
-	}
+//	public static boolean addSalaryT(Teacher teach) {
+//		if (teach.getPosition().equals("Teacher") && teach.getPosition() != null) {
+//			if (teach.getExperience() > 0 && teach.getExperience() < 7) {
+//				teach.setSalary(BigDecimal.valueOf(1000).add(teach.getPrize().add(teach.getDegreePay())));
+//				return true;
+//			} else if (teach.getExperience() > 7 && teach.getExperience() < 15) {
+//				teach.setSalary(BigDecimal.valueOf(1500).add(teach.getPrize().add(teach.getDegreePay())));
+//				return true;
+//			} else if (teach.getExperience() > 15) {
+//				teach.setSalary(BigDecimal.valueOf(2000).add(teach.getPrize().add(teach.getDegreePay())));
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
 
 //	public static boolean addPrizeT(Teacher teach) {
 //		if (teach.getExperience() > 0 && teach.getExperience() < 15) {
