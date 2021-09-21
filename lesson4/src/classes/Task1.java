@@ -13,7 +13,7 @@ public class Task1 extends AccountantUtil {
 		teacher1.setSubjects("Math");
 		teacher1.setAge(45);
 		addAcademicPay(teacher1);
-		addPrizeT(teacher1);
+		addPrize(teacher1);
 		addSalaryT(teacher1);
 		System.out.println(teacher1.toString() + "\t" + teacher1.intoducedYourself() + "\n");
 
@@ -27,7 +27,7 @@ public class Task1 extends AccountantUtil {
 		teacher2.setSubjects("Comp. Science");
 		teacher2.setAge(47);
 		addAcademicPay(teacher2);
-		addPrizeT(teacher2);
+		addPrize(teacher2);
 		addSalaryT(teacher2);
 		System.out.println(teacher2.toString() + "\t" + teacher2.intoducedYourself() + "\n");
 
@@ -41,7 +41,7 @@ public class Task1 extends AccountantUtil {
 		teacher3.setSubjects("Java dev");
 		teacher3.setAge(36);
 		addAcademicPay(teacher3);
-		addPrizeT(teacher3);
+		addPrize(teacher3);
 		addSalaryT(teacher3);
 		System.out.println(teacher3.toString() + "\t" + teacher3.intoducedYourself() + "\n");
 
@@ -55,7 +55,7 @@ public class Task1 extends AccountantUtil {
 		teacher4.setSubjects("Java dev");
 		teacher4.setAge(31);
 		addAcademicPay(teacher4);
-		addPrizeT(teacher4);
+		addPrize(teacher4);
 		addSalaryT(teacher4);
 		System.out.println(teacher4.toString() + "\t" + teacher4.intoducedYourself() + "\n");
 
@@ -65,8 +65,8 @@ public class Task1 extends AccountantUtil {
 		cleaner1.setAge(40);
 		cleaner1.setPosition("Cleaner");
 		cleaner1.setSchedule("18:00 - 21:00");
-		addPrizeC(cleaner1);
-		addSalaryC(cleaner1);
+		addPrize(cleaner1);
+		addSalary(cleaner1);
 		System.out.println(cleaner1.toString() + "\t" + cleaner1.intoducedYourself() + "\n");
 
 		Chair ch1 = new Chair();
