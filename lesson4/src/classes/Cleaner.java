@@ -5,7 +5,8 @@ public class Cleaner extends Employee implements Identifiable {
 	private String schedule;
 
 	public String toString() {
-		return "[Cleaner info: My schedule - " + getSchedule();
+		return "[Cleaner info: My schedule - " + getSchedule() + "; Salary - " + getSalary() + "; Prize - " + getPrize() 
+		+ "]";
 	}
 
 	public int getClassrooms() {
