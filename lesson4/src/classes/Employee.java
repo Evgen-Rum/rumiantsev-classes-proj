@@ -8,7 +8,7 @@ public abstract class Employee extends Person {
 	private String academDegree;
 	private int experience;
 	private BigDecimal salary = BigDecimal.valueOf(10);
-	private BigDecimal prize = BigDecimal.valueOf(10);
+	private static BigDecimal prize = new BigDecimal(0);
 	private BigDecimal holidayPay = BigDecimal.valueOf(10);
 	private BigDecimal degreePay = BigDecimal.valueOf(10);
 
@@ -41,7 +41,7 @@ public abstract class Employee extends Person {
 	}
 
 	public void setPrize(BigDecimal prize) {
-		this.prize = prize;
+		Employee.prize = prize;
 	}
 
 	public String getPosition() {
