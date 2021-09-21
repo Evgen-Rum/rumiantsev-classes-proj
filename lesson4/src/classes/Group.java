@@ -39,30 +39,10 @@ public class Group implements Identifiable {
 			return true;
 		}
 
-//		if (numberOfStudents < students.length) {
-//			for (int i = 0; i < students.length; i++) {
-//				if (students[i] == null) {
-//					students[i] = Stud;
-//					numberOfStudents++;
-//					return true;
-//				}
-//			}
-//		}
-//		return false;
 	}
 
 	public boolean removeStudents(Student Stud) {
 		return students.remove(Stud);
-
-//		for (int i = 0; i < students.length; i++) {
-//			if (students[i] != null && students[i].getId() == id) {
-//				students[i] = null;
-//				numberOfStudents--;
-//				return true;
-//			} else {
-//			}
-//		}
-//		return false;
 	}
 
 	public String getGroupName() {

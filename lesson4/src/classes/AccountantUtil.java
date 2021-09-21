@@ -45,34 +45,6 @@ public class AccountantUtil extends Employee {
 		return false;
 	}
 
-//	public static boolean addSalaryT(Teacher teach) {
-//		if (teach.getPosition().equals("Teacher") && teach.getPosition() != null) {
-//			if (teach.getExperience() > 0 && teach.getExperience() < 7) {
-//				teach.setSalary(BigDecimal.valueOf(1000).add(teach.getPrize().add(teach.getDegreePay())));
-//				return true;
-//			} else if (teach.getExperience() > 7 && teach.getExperience() < 15) {
-//				teach.setSalary(BigDecimal.valueOf(1500).add(teach.getPrize().add(teach.getDegreePay())));
-//				return true;
-//			} else if (teach.getExperience() > 15) {
-//				teach.setSalary(BigDecimal.valueOf(2000).add(teach.getPrize().add(teach.getDegreePay())));
-//				return true;
-//			}
-//		}
-//		return false;
-//	}
-
-//	public static boolean addPrizeT(Teacher teach) {
-//		if (teach.getExperience() > 0 && teach.getExperience() < 15) {
-//			teach.setPrize(teach.getSalary().divide(teach.getSalary(), 3));
-//			return true;
-//		} else if (teach.getExperience() > 15) {
-//			teach.setPrize(teach.getSalary().divide(teach.getSalary(), 2));
-//			return true;
-//		} else {
-//			return false;
-//		}
-//	}
-
 	public static boolean addPrize(Employee empl) {
 		if (empl.getPosition().equals("Teacher")) {
 			if (empl.getExperience() >= 5 && empl.getExperience() <= 10) {
@@ -99,18 +71,6 @@ public class AccountantUtil extends Employee {
 		}
 		return false;
 	}
-
-//	public static boolean addPrizeC(Cleaner clean) {
-//		if (clean.getExperience() > 0 && clean.getExperience() < 15) {
-//			clean.setPrize(clean.getSalary().divide(clean.getSalary(), 3));
-//			return true;
-//		} else if (clean.getExperience() > 15) {
-//			clean.setPrize(clean.getSalary().divide(clean.getSalary(), 2));
-//			return true;
-//		} else {
-//			return false;
-//		}
-//	}
 
 	public static boolean addHolidayPayT(Teacher teach) {
 		teach.setHolidayPay(teach.getSalary().multiply(teach.getSalary().divide(teach.getSalary(), 2)));
