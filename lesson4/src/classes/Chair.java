@@ -13,7 +13,7 @@ public class Chair extends Employee {
 
 	public String toString() {
 		return "[Chair info: Name - " + getChairName() + "; Number of teachers - " + numberOfTeacher
-				+ "; Head of chair -  " + getHeadOfChair() + "\n" + "; Cleaner - " + getCleaner() + "; All costs - " + allCost
+				+ "; Head of chair -  " + getHeadOfChair() + ";\n" + " Cleaner - " + getCleaner() + "; All costs - " + allCost
 				+ "]" + "\n";
 	}
 
