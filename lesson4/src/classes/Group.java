@@ -17,7 +17,7 @@ public class Group implements Identifiable {
 
 	public String toString() {
 		String str = "[Group info: Name/number of the group - " + groupName + "; Specialization - " + specializ
-				+ "; Number of students in the group - " + getNumOfStudents() + "; ID - " + id + "]";
+				+ "; Number of students in the group - " + getNumberOfStudents() + "; ID - " + id + "]";
 		if (curator != null) {
 			str += "\n Group " + groupName + " curator: " + curator.toString() + "\n";
 		}
@@ -73,7 +73,7 @@ public class Group implements Identifiable {
 		return id;
 	}
 
-	public int getNumOfStudents() {
+	public int getNumberOfStudents() {
 		return students.size();
 	}
 
