@@ -48,12 +48,12 @@ public class Task1 extends AccountantUtil {
 		Teacher teacher4 = new Teacher();
 		teacher4.setPosition("Teacher");
 		teacher4.setAcademDegree("Professor");
-		teacher4.setExperience(52);
+		teacher4.setExperience(32);
 		teacher4.setFirstName("Ivan");
 		teacher4.setLastName("Petrenko");
 		teacher4.setId();
 		teacher4.setSubjects("Java dev");
-		teacher4.setAge(31);
+		teacher4.setAge(72);
 		addAcademicPay(teacher4);
 		addPrize(teacher4);
 		addSalary(teacher4);
