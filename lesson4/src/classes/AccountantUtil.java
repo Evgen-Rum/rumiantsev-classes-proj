@@ -72,14 +72,8 @@ public class AccountantUtil extends Employee {
 		return false;
 	}
 
-	public static boolean addHolidayPayT(Teacher teach) {
-		teach.setHolidayPay(teach.getSalary().multiply(teach.getSalary().divide(teach.getSalary(), 2)));
+	public static boolean addHolidayPay(Employee employee) {
+		employee.setHolidayPay(employee.getSalary().multiply(employee.getSalary().divide(employee.getSalary(), 2)));
 		return true;
 	}
-
-	public static boolean addHolidayPayC(Cleaner clean) {
-		clean.setHolidayPay(clean.getSalary().multiply(clean.getSalary().divide(clean.getSalary(), 2)));
-		return true;
-	}
-
 }
