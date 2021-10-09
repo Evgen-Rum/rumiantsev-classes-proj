@@ -4,7 +4,7 @@ public class Student extends Person implements Identifiable {
 	private String faculty;
 	private String position;
 	private String marks;
-	private String gMarks = "Good";
+	private String goodMarks = "Good";
 	private int scholarship;
 
 	public String toString() {
@@ -41,7 +41,7 @@ public class Student extends Person implements Identifiable {
 	}
 
 	public void setMarks(String marks) {
-		if (marks.equals(gMarks) || marks.equalsIgnoreCase("Bad")) {
+		if (marks.equals(goodMarks) || marks.equalsIgnoreCase("Bad")) {
 			this.marks = marks;
 		} else {
 			System.out.println("Incorrect value!");
@@ -49,7 +49,7 @@ public class Student extends Person implements Identifiable {
 	}
 
 	public boolean addScholarship(Student stud) {
-		if (marks != null && marks.equals(gMarks)) {
+		if (marks != null && marks.equals(goodMarks)) {
 			scholarship = 90;
 			return true;
 		} else {
